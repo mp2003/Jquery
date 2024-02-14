@@ -23,3 +23,11 @@
   color: $primary-text-color;
   @include h1Text;
 }
+
+.start-container {
+  @include fullPage;
+  @include flexBox;
+  background-color: $tirtiary-color;
+  color: $primary-text-color;
+  @include h1Text;
+}
