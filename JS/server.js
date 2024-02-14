@@ -2,5 +2,8 @@
 
 $(document).ready(function () {
   console.log($(".home"));
-  $(".home").hide("very slow");
+  setInterval(() => {
+    $(".home").hide(5000);
+    $(".home").show(5000);
+  }, 10000);
 });
