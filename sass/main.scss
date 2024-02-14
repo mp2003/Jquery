@@ -1,0 +1,25 @@
+@import "mixin";
+@import "var";
+@import "fullPage";
+
+* {
+  margin: 0;
+  padding: 0;
+  border-style: border-box;
+}
+
+.home-container {
+  @include fullPage;
+  @include flexBox;
+  background-color: $primary-color;
+  color: $primary-text-color;
+  @include h1Text;
+}
+
+.code-container {
+  @include fullPage;
+  @include flexBox;
+  background-color: $secondary-color;
+  color: $primary-text-color;
+  @include h1Text;
+}

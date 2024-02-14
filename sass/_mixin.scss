@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap");
+
+@mixin flexBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin fullPage {
+  height: 100vh;
+  width: 100%;
+}
+
+@mixin h1Text {
+  font-family: "Sixtyfour";
+  font-size: 7em;
+}
