@@ -31,3 +31,7 @@
   color: $primary-text-color;
   @include h1Text;
 }
+
+.completed {
+  text-decoration: line-through;
+}

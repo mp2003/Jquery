@@ -14,7 +14,7 @@
   background-color: black !important;
   color: #ebf400;
   font-family: "Sixtyfour";
-  font-size: 7em;
+  font-size: 5em;
 }
 
 .code-container {
@@ -26,7 +26,7 @@
   background-color: #f72798;
   color: #ebf400;
   font-family: "Sixtyfour";
-  font-size: 7em;
+  font-size: 5em;
 }
 
 .start-container {
@@ -38,5 +38,9 @@
   background-color: #f57d1f;
   color: #ebf400;
   font-family: "Sixtyfour";
-  font-size: 7em;
+  font-size: 5em;
+}
+
+.completed {
+  text-decoration: line-through;
 }/*# sourceMappingURL=main.css.map */
