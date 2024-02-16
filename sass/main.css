@@ -41,6 +41,14 @@
   font-size: 5em;
 }
 
+.ajax-req {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .completed {
   text-decoration: line-through;
 }/*# sourceMappingURL=main.css.map */

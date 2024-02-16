@@ -32,6 +32,11 @@
   @include h1Text;
 }
 
+.ajax-req {
+  @include fullPage;
+  @include flexBox;
+}
+
 .completed {
   text-decoration: line-through;
 }

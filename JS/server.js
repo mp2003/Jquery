@@ -20,30 +20,33 @@ $(document).ready(function () {
     scrollToContainer("start-container");
   }, 6000);
 
-  function fetchData() {
-    return $.ajax({
-      url: URL,
-      method: "GET",
-    });
-  }
-  var promise = fetchData();
+  const promise = $.ajax({
+    url: URL,
+    method: "get",
+  });
+
   promise
     .done((data) => {
-      const ajax = $(".ajax-list");
-      const ajaxList = $(".ajax-list li");
-      // console.log(data.length);
-      for (var i = 0; i < 10; i++) {
-        console.log(data[i].completed);
-        const completedClass = data[i].completed ? "completed" : "";
-
-        // Append a new <li> element with the title and class
-        ajax.append(
+      const list = $(".ajax-list");
+      for (let i = 0; i < 10; i++) {
+        console.log(data[i].title);
+        let className = "";
+        if (data[i].completed) className = "completed";
+        // console.log(className);
+        list.append(
           "<li class='" +
-            completedClass +
+            className +
             "'>" +
             JSON.stringify(data[i].title) +
             "</li>"
         );
+        // console.log(
+        //   "<li class='" +
+        //     className +
+        //     "'>" +
+        //     JSON.stringify(data[i].title) +
+        //     "</li>"
+        // );
       }
     })
     .fail((error) => console.log(error))
